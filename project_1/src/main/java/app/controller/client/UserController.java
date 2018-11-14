@@ -19,7 +19,7 @@ public class UserController {
         return "/client/login";
     }
 
-    @RequestMapping(value = "/register" ,method = RequestMethod.PUT)
+    @RequestMapping(value = "/register" ,method = RequestMethod.GET)
     public String register(){
         return "/client/register";
     }
