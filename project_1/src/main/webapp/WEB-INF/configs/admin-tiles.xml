@@ -15,4 +15,9 @@
 		<put-attribute name="body" value="/admin/views/index.jsp" />
 	</definition>
 
+	<!-- Author page -->
+	<definition name="/admin/authors" extends="/admin/baseLayout">
+		<put-attribute name="title" value="Author page"/>
+		<put-attribute name="body" value="/admin/views/author.jsp"/>
+	</definition>
 </tiles-definitions>

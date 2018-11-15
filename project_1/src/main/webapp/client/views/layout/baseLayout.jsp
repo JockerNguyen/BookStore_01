@@ -37,10 +37,6 @@
         <link rel="stylesheet" href="/client/assets/css/responsive.css">
         <!-- modernizr css -->
         <script src="/client/assets/js/vendor/modernizr-2.8.3.min.js"></script>
-<<<<<<< HEAD
-=======
-
->>>>>>> 62a91cd... login with google
         <title>
             <tiles:insertAttribute name="title" ignore="true" />
             </title>
