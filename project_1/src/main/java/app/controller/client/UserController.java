@@ -37,9 +37,7 @@ public class UserController {
         return "/client/register";
     }
 
-<<<<<<< HEAD
 
-=======
     @RequestMapping("/login-google")
     public String loginGoogle(HttpServletRequest request) throws ClientProtocolException, IOException {
         String code = request.getParameter("code");
@@ -61,5 +59,4 @@ public class UserController {
         authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
         SecurityContextHolder.getContext().setAuthentication(authentication);
     }
->>>>>>> 62a91cd... login with google
 }
