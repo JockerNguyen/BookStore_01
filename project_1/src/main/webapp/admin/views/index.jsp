@@ -2275,3 +2275,10 @@
         </div>
     </div>
 </aside>
+<head>
+    <!-- Specific Page Vendor CSS -->
+    <link rel="stylesheet" href="/admin/assets/vendor/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css">
+    <link rel="stylesheet" href="/admin/assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css">
+    <link rel="stylesheet" href="/admin/assets/vendor/morris/morris.css">
+</head>
+
