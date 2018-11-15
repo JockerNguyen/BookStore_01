@@ -70,12 +70,12 @@
                                 Login with Google
                             </button>
                         </div>
-                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-                        <p class="error">
+                        <p>
                             <c:if test="${not empty errorMessage}">
                                 <spring:message code="${errorMessage}"/>
                             </c:if>
                         </p
+                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                     </div>
                 </div>
             </form>

@@ -23,4 +23,6 @@ public class UserController {
     public String register(){
         return "/client/register";
     }
+
+
 }
