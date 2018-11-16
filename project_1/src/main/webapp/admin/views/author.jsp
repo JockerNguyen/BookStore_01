@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="spring" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 
 <div class="inner-wrapper">
@@ -56,7 +57,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-parent">
+                        <li class="nav-parent nav-expanded nav-active">
                             <a>
                                 <i class="fa fa-list-alt" aria-hidden="true"></i>
                                 <span>Books</span>
@@ -77,49 +78,9 @@
                                         Producers
                                     </a>
                                 </li>
-                                <li>
+                                <li class="nav-active">
                                     <a href="forms-layouts.html">
                                         Categories
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-
-                        <li class="nav-parent nav-expanded nav-active">
-                            <a>
-                                <i class="fa fa-table" aria-hidden="true"></i>
-                                <span>Tables</span>
-                            </a>
-                            <ul class="nav nav-children">
-                                <li>
-                                    <a href="tables-basic.html">
-                                        Basic
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="tables-advanced.html">
-                                        Advanced
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="tables-responsive.html">
-                                        Responsive
-                                    </a>
-                                </li>
-                                <li class="nav-active">
-                                    <a href="tables-editable.html">
-                                        Editable
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="tables-ajax.html">
-                                        Ajax
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="tables-pricing.html">
-                                        Pricing
                                     </a>
                                 </li>
                             </ul>
@@ -207,7 +168,7 @@
                     <a href="#" class="fa fa-times"></a>
                 </div>
 
-                <h2 class="panel-title">Default</h2>
+                <h2 class="panel-title">Authors</h2>
             </header>
             <div class="panel-body">
                 <div class="row">
@@ -217,519 +178,26 @@
                         </div>
                     </div>
                 </div>
-                <div id="datatable-editable_wrapper" class="dataTables_wrapper no-footer"><div class="row datatables-header form-inline"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="datatable-editable_length"><label><div class="select2-container" id="s2id_autogen1"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-2">50</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen2" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-2" id="s2id_autogen2"></div><select name="datatable-editable_length" aria-controls="datatable-editable" class="select2-offscreen" tabindex="-1" title=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> records per page</label></div></div><div class="col-sm-12 col-md-6"><div id="datatable-editable_filter" class="dataTables_filter"><label><input type="search" class="form-control" placeholder="Search" aria-controls="datatable-editable"></label></div></div></div><div class="table-responsive"><table class="table table-bordered table-striped mb-none dataTable no-footer" id="datatable-editable" role="grid" aria-describedby="datatable-editable_info">
+                <div id="datatable-editable_wrapper" class="dataTables_wrapper no-footer"><div class="table-responsive"><table class="table table-bordered table-striped mb-none dataTable no-footer" id="datatable-editable" role="grid" aria-describedby="datatable-editable_info">
                     <thead>
-                    <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="datatable-editable" rowspan="1" colspan="1" aria-label="Rendering engine: activate to sort column ascending" aria-sort="ascending" style="width: 128px;">Rendering engine</th><th class="sorting" tabindex="0" aria-controls="datatable-editable" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 178px;">Browser</th><th class="sorting" tabindex="0" aria-controls="datatable-editable" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 160px;">Platform(s)</th><th class="sorting_disabled" rowspan="1" colspan="1" aria-label="Actions" style="width: 60px;">Actions</th></tr>
+                    <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="datatable-editable" rowspan="1" colspan="1" aria-label="Rendering engine: activate to sort column ascending" aria-sort="ascending" style="width: 128px;">ID</th><th class="sorting" tabindex="0" aria-controls="datatable-editable" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 178px;">Full name</th><th class="sorting" tabindex="0" aria-controls="datatable-editable" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 160px;">Description</th><th class="sorting_disabled" rowspan="1" colspan="1" aria-label="Actions" style="width: 60px;">Actions</th></tr>
                     </thead>
                     <tbody>
-                    <tr class="gradeA odd" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Firefox 1.5</td>
-                        <td>Win 98+ / OSX.2+a</td>
-                        <td class="actions"><a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a></td>
-                    </tr><tr class="gradeA even" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Firefox 2.0</td>
-                        <td>Win 98+ / OSX.2+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA odd" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Firefox 3.0</td>
-                        <td>Win 2k+ / OSX.3+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA even" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Camino 1.0</td>
-                        <td>OSX.2+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA odd" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Camino 1.5</td>
-                        <td>OSX.3+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA even" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Netscape 7.2</td>
-                        <td>Win 95+ / Mac OS 8.6-9.2</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA odd" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Netscape Browser 8</td>
-                        <td>Win 98SE+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA even" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Netscape Navigator 9</td>
-                        <td>Win 98+ / OSX.2+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA odd" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Mozilla 1.0</td>
-                        <td>Win 95+ / OSX.1+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA even" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Mozilla 1.1</td>
-                        <td>Win 95+ / OSX.1+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA odd" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Mozilla 1.2</td>
-                        <td>Win 95+ / OSX.1+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA even" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Mozilla 1.3</td>
-                        <td>Win 95+ / OSX.1+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA odd" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Mozilla 1.4</td>
-                        <td>Win 95+ / OSX.1+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA even" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Mozilla 1.5</td>
-                        <td>Win 95+ / OSX.1+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA odd" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Mozilla 1.6</td>
-                        <td>Win 95+ / OSX.1+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA even" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Mozilla 1.7</td>
-                        <td>Win 98+ / OSX.1+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA odd" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Mozilla 1.8</td>
-                        <td>Win 98+ / OSX.1+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA even" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Seamonkey 1.1</td>
-                        <td>Win 98+ / OSX.2+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA odd" role="row">
-                        <td class="sorting_1">Gecko</td>
-                        <td>Epiphany 2.20</td>
-                        <td>Gnome</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeC even" role="row">
-                        <td class="sorting_1">KHTML</td>
-                        <td>Konqureror 3.1</td>
-                        <td>KDE 3.1</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA odd" role="row">
-                        <td class="sorting_1">KHTML</td>
-                        <td>Konqureror 3.3</td>
-                        <td>KDE 3.3</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA even" role="row">
-                        <td class="sorting_1">KHTML</td>
-                        <td>Konqureror 3.5</td>
-                        <td>KDE 3.5</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA odd" role="row">
-                        <td class="sorting_1">Misc</td>
-                        <td>NetFront 3.1</td>
-                        <td>Embedded devices</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA even" role="row">
-                        <td class="sorting_1">Misc</td>
-                        <td>NetFront 3.4</td>
-                        <td>Embedded devices</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeX odd" role="row">
-                        <td class="sorting_1">Misc</td>
-                        <td>Dillo 0.8</td>
-                        <td>Embedded devices</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeX even" role="row">
-                        <td class="sorting_1">Misc</td>
-                        <td>Links</td>
-                        <td>Text only</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeX odd" role="row">
-                        <td class="sorting_1">Misc</td>
-                        <td>Lynx</td>
-                        <td>Text only</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeC even" role="row">
-                        <td class="sorting_1">Misc</td>
-                        <td>IE Mobile</td>
-                        <td>Windows Mobile 6</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeC odd" role="row">
-                        <td class="sorting_1">Misc</td>
-                        <td>PSP browser</td>
-                        <td>PSP</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeU even" role="row">
-                        <td class="sorting_1">Other browsers</td>
-                        <td>All others</td>
-                        <td>-</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA odd" role="row">
-                        <td class="sorting_1">Presto</td>
-                        <td>Opera 7.0</td>
-                        <td>Win 95+ / OSX.1+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA even" role="row">
-                        <td class="sorting_1">Presto</td>
-                        <td>Opera 7.5</td>
-                        <td>Win 95+ / OSX.2+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA odd" role="row">
-                        <td class="sorting_1">Presto</td>
-                        <td>Opera 8.0</td>
-                        <td>Win 95+ / OSX.2+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA even" role="row">
-                        <td class="sorting_1">Presto</td>
-                        <td>Opera 8.5</td>
-                        <td>Win 95+ / OSX.2+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA odd" role="row">
-                        <td class="sorting_1">Presto</td>
-                        <td>Opera 9.0</td>
-                        <td>Win 95+ / OSX.3+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA even" role="row">
-                        <td class="sorting_1">Presto</td>
-                        <td>Opera 9.2</td>
-                        <td>Win 88+ / OSX.3+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA odd" role="row">
-                        <td class="sorting_1">Presto</td>
-                        <td>Opera 9.5</td>
-                        <td>Win 88+ / OSX.3+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA even" role="row">
-                        <td class="sorting_1">Presto</td>
-                        <td>Opera for Wii</td>
-                        <td>Wii</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA odd" role="row">
-                        <td class="sorting_1">Presto</td>
-                        <td>Nokia N800</td>
-                        <td>N800</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA even" role="row">
-                        <td class="sorting_1">Presto</td>
-                        <td>Nintendo DS browser</td>
-                        <td>Nintendo DS</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeX odd" role="row">
-                        <td class="sorting_1">Tasman</td>
-                        <td>Internet Explorer 4.5</td>
-                        <td>Mac OS 8-9</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeC even" role="row">
-                        <td class="sorting_1">Tasman</td>
-                        <td>Internet Explorer 5.1</td>
-                        <td>Mac OS 7.6-9</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeC odd" role="row">
-                        <td class="sorting_1">Tasman</td>
-                        <td>Internet Explorer 5.2</td>
-                        <td>Mac OS 8-X</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeX even" role="row">
-                        <td class="sorting_1">Trident</td>
-                        <td>Internet
-                            Explorer 4.0
-                        </td>
-                        <td>Win 95+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeC odd" role="row">
-                        <td class="sorting_1">Trident</td>
-                        <td>Internet
-                            Explorer 5.0
-                        </td>
-                        <td>Win 95+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA even" role="row">
-                        <td class="sorting_1">Trident</td>
-                        <td>Internet
-                            Explorer 5.5
-                        </td>
-                        <td>Win 95+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA odd" role="row">
-                        <td class="sorting_1">Trident</td>
-                        <td>Internet
-                            Explorer 6
-                        </td>
-                        <td>Win 98+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA even" role="row">
-                        <td class="sorting_1">Trident</td>
-                        <td>Internet Explorer 7</td>
-                        <td>Win XP SP2+</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA odd" role="row">
-                        <td class="sorting_1">Trident</td>
-                        <td>AOL browser (AOL desktop)</td>
-                        <td>Win XP</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr><tr class="gradeA even" role="row">
-                        <td class="sorting_1">Webkit</td>
-                        <td>Safari 1.2</td>
-                        <td>OSX.3</td>
-                        <td class="actions">
-                            <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
-                            <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
-                            <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        </td>
-                    </tr></tbody>
-                </table></div><div class="row datatables-footer"><div class="col-sm-12 col-md-6"><div class="dataTables_info" id="datatable-editable_info" role="status" aria-live="polite">Showing 1 to 50 of 56 entries</div></div><div class="col-sm-12 col-md-6"><div class="dataTables_paginate paging_bs_normal" id="datatable-editable_paginate"><ul class="pagination"><li class="prev disabled"><a href="#"><span class="fa fa-chevron-left"></span></a></li><li class="active"><a href="#">1</a></li><li><a href="#">2</a></li><li class="next"><a href="#"><span class="fa fa-chevron-right"></span></a></li></ul></div></div></div></div>
+                    <c:forEach items="${listAuthor}" var="item">
+                        <tr class="gradeA odd" role="row">
+                            <td class="sorting_1">${item.id}</td>
+                            <td>${item.fullName}</td>
+                            <td>${item.description}</td>
+                            <td class="actions">
+                                <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
+                                <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+                                <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
+                                <a href="${item.id}" class="on-default remove-row"><i class="fa fa-trash-o"></i></a></td>
+                        </tr>
+                    </c:forEach>
+
+                    </tbody>
+                </table></div></div>
             </div>
         </section>
         <!-- end: page -->
@@ -759,7 +227,7 @@
                             <ul>
                                 <li class="status-online">
                                     <figure class="profile-picture">
-                                        <img src="assets/images/!sample-user.jpg" alt="Joseph Doe" class="img-circle">
+                                        <img src="/admin/assets/images/!sample-user.jpg" alt="Joseph Doe" class="img-circle">
                                     </figure>
                                     <div class="profile-info">
                                         <span class="name">Joseph Doe Junior</span>
@@ -768,7 +236,7 @@
                                 </li>
                                 <li class="status-online">
                                     <figure class="profile-picture">
-                                        <img src="assets/images/!sample-user.jpg" alt="Joseph Doe" class="img-circle">
+                                        <img src="/admin/assets/images/!sample-user.jpg" alt="Joseph Doe" class="img-circle">
                                     </figure>
                                     <div class="profile-info">
                                         <span class="name">Joseph Doe Junior</span>
@@ -777,7 +245,7 @@
                                 </li>
                                 <li class="status-offline">
                                     <figure class="profile-picture">
-                                        <img src="assets/images/!sample-user.jpg" alt="Joseph Doe" class="img-circle">
+                                        <img src="/admin/assets/images/!sample-user.jpg" alt="Joseph Doe" class="img-circle">
                                     </figure>
                                     <div class="profile-info">
                                         <span class="name">Joseph Doe Junior</span>
@@ -786,7 +254,7 @@
                                 </li>
                                 <li class="status-offline">
                                     <figure class="profile-picture">
-                                        <img src="assets/images/!sample-user.jpg" alt="Joseph Doe" class="img-circle">
+                                        <img src="/admin/assets/images/!sample-user.jpg" alt="Joseph Doe" class="img-circle">
                                     </figure>
                                     <div class="profile-info">
                                         <span class="name">Joseph Doe Junior</span>
@@ -805,8 +273,44 @@
 
 <head>
     <!-- Specific Page Vendor CSS -->
-    <link rel="stylesheet" href="assets/vendor/select2/select2.css"/>
-    <link rel="stylesheet" href="assets/vendor/jquery-datatables-bs3/assets/css/datatables.css"/>
+    <link rel="stylesheet" href="/admin/assets/vendor/select2/select2.css" />
+    <link rel="stylesheet" href="/admin/assets/vendor/jquery-datatables-bs3/assets/css/datatables.css" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="/admin/assets/stylesheets/theme.css">
+
+    <!-- Skin CSS -->
+    <link rel="stylesheet" href="/admin/assets/stylesheets/skins/default.css">
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="/admin/assets/stylesheets/theme-custom.css">
+
+    <!-- Vendor -->
+    <script src="/admin/assets/vendor/jquery/jquery.js"></script>
+    <script src="/admin/assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+    <script src="/admin/assets/vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="/admin/assets/vendor/nanoscroller/nanoscroller.js"></script>
+    <script src="/admin/assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="/admin/assets/vendor/magnific-popup/magnific-popup.js"></script>
+    <script src="/admin/assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+
+    <!-- Specific Page Vendor -->
+    <script src="/admin/assets/vendor/select2/select2.js"></script>
+    <script src="/admin/assets/vendor/jquery-datatables/media/js/jquery.dataTables.js"></script>
+    <script src="/admin/assets/vendor/jquery-datatables-bs3/assets/js/datatables.js"></script>
+
+    <!-- Theme Base, Components and Settings -->
+    <script src="/admin/assets/javascripts/theme.js"></script>
+
+    <!-- Theme Custom -->
+    <script src="/admin/assets/javascripts/theme.custom.js"></script>
+
+    <!-- Theme Initialization Files -->
+    <script src="/admin/assets/javascripts/theme.init.js"></script>
+
+
+    <!-- Examples -->
+    <script src="/admin/assets/javascripts/tables/examples.datatables.editable.js"></script>
 </head>
 
 
